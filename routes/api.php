@@ -16,3 +16,10 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/photo', 'PhotoController@index')->name('photo.index');
+Route::post('/photo', 'PhotoController@store')->name('photo.store');
+Route::get('/photo/{id}/comment', 'CommentController@index')->name('comment.index');
+Route::post('/photo/{id}/comment', 'CommentController@add')->name('comment.add');
+Route::get('/chat', 'ChatController@index')->name('chat.index');
+Route::post('/chat', 'ChatController@add')->name('chat.add');
