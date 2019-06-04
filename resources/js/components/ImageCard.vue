@@ -18,15 +18,15 @@
 <script>
 export default {
   name: 'ImageCard',
-  props: [
+  props: {
     filePath: {
-      type: String.
+      type: String,
       default: ''
     },
     name: {
       type: String,
       default: ''
     }
-  ]
+  }
 }
 </script>
