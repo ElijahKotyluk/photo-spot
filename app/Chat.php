@@ -12,6 +12,6 @@ class Chat extends Model
      * @var array
      */
     protected $fillable = [
-      'text'
-    ]
+      'text',
+    ];
 }
