@@ -14,11 +14,12 @@ window.Vue = require('vue');
 
 import store from './store';
 import HomePage from './components/HomePage';
+import Layout from './layout/Layout';
 
 Vue.use(Vuetify);
 Vue.use(VueRouter);
 
-Vue.component('home-page', HomePage);
+Vue.component('layout', Layout);
 
 const app = new Vue({
     el: '#app',
