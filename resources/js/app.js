@@ -21,8 +21,18 @@ Vue.use(VueRouter);
 
 Vue.component('layout', Layout);
 
+const routes = [
+  {
+    path: '/',
+    component: HomePage
+  }
+];
+
+const router = new VueRouter({
+  routes
+})
+
 const app = new Vue({
-    el: '#app',
     router,
     store
-});
+}).$mount('#app');
