@@ -37,6 +37,7 @@
       right
       temporary
     >
+      <chat />
     </v-navigation-drawer>
 
     <v-content>
